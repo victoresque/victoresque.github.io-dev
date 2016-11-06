@@ -2,26 +2,119 @@
 <html>
 <head>
   <title>Victoresque</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/victor.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://use.typekit.net/vzq4ipz.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    a {
+      color: brown;
+      text-decoration: none;
+    }
+    a:link{
+      color: yellow;
+    }
+    a:visited{
+      color: grey;
+    }
+    a:hover{
+      color: blue;
+    }
+    #tableofcontent li:hover{
+      font-size: x-large;
+    }
+  </style>
 </head>
 <body>
   <h1>Victoresque</h1>
   Nothing special.
   <hr>
-  <h2>About</h2>
+  <?php include "table.html"; ?>
+  <h2 id="about">About</h2>
     <ul>
       <li>Normal man</li>
       <li>From Earth</li>
       <li>I have something to say...</li>
       <li>Or I don't have anything to say...</li>
     </ul>
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>&frac78;</td>
+        <td rowspan="2" colspan="2">2&nbsp;3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>4</td>
+      </tr>
+    </table>
+  <h2 id="programming">Programming</h2>
+  <a href="https://github.com/tensorflow/tensorflow">Tensorflow</a>
 
+    <blockquote><pre>
+namespace tensorflow {
 
-  <h2>Programming</h2>
+  template <class Scalar>
+  class MatrixInverseOp : public LinearAlgebraOp<Scalar> {
+   public:
+    typedef LinearAlgebraOp<Scalar> Base;
 
+    explicit MatrixInverseOp(OpKernelConstruction* context) : Base(context) {
+      OP_REQUIRES_OK(context, context->GetAttr("adjoint", &adjoint_));
+    }
 
-  <h2>Music</h2>
+    using Matrix = typename Base::Matrix;
+    using MatrixMaps = typename Base::MatrixMaps;
+    using ConstMatrixMap = typename Base::ConstMatrixMap;
+    using ConstMatrixMaps = typename Base::ConstMatrixMaps;
+
+    void ComputeMatrix(OpKernelContext* context, const ConstMatrixMaps& inputs,
+                       MatrixMaps* outputs) final {
+      const ConstMatrixMap& input = inputs[0];
+    </pre></blockquote>
+    <blockquote><pre><code class="c++">namespace tensorflow {
+
+  template <class Scalar>
+  class MatrixInverseOp : public LinearAlgebraOp<Scalar> {
+   public:
+    typedef LinearAlgebraOp<Scalar> Base;
+
+    explicit MatrixInverseOp(OpKernelConstruction* context) : Base(context) {
+      OP_REQUIRES_OK(context, context->GetAttr("adjoint", &adjoint_));
+    }
+
+    using Matrix = typename Base::Matrix;
+    using MatrixMaps = typename Base::MatrixMaps;
+    using ConstMatrixMap = typename Base::ConstMatrixMap;
+    using ConstMatrixMaps = typename Base::ConstMatrixMaps;
+
+    void ComputeMatrix(OpKernelContext* context, const ConstMatrixMaps& inputs,
+                       MatrixMaps* outputs) final {
+      const ConstMatrixMap& input = inputs[0];
+    </code></pre></blockquote>
+
+  <h2 id="music">Music</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/foVY5kLqp6w" frameborder="0" allowfullscreen></iframe>
-  <h2>Art</h2>
+  <h2 id="art">Art</h2>
 
 </body>
 </html>
+
+
