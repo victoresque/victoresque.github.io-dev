@@ -2,119 +2,25 @@
 <html>
 <head>
   <title>Victoresque</title>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheets/victor.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script src="http://use.typekit.net/vzq4ipz.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-  <style>
-    body {
-      font-family: Arial;
-    }
-    a {
-      color: brown;
-      text-decoration: none;
-    }
-    a:link{
-      color: yellow;
-    }
-    a:visited{
-      color: grey;
-    }
-    a:hover{
-      color: blue;
-    }
-    #tableofcontent li:hover{
-      font-size: x-large;
-    }
-  </style>
 </head>
 <body>
   <h1>Victoresque</h1>
-  Nothing special.
-  <hr>
-  <?php include "table.html"; ?>
-  <h2 id="about">About</h2>
-    <ul>
-      <li>Normal man</li>
-      <li>From Earth</li>
-      <li>I have something to say...</li>
-      <li>Or I don't have anything to say...</li>
-    </ul>
-    <table>
-      <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>&frac78;</td>
-        <td rowspan="2" colspan="2">2&nbsp;3</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>4</td>
-      </tr>
-    </table>
-  <h2 id="programming">Programming</h2>
-  <a href="https://github.com/tensorflow/tensorflow">Tensorflow</a>
-
-    <blockquote><pre>
-namespace tensorflow {
-
-  template <class Scalar>
-  class MatrixInverseOp : public LinearAlgebraOp<Scalar> {
-   public:
-    typedef LinearAlgebraOp<Scalar> Base;
-
-    explicit MatrixInverseOp(OpKernelConstruction* context) : Base(context) {
-      OP_REQUIRES_OK(context, context->GetAttr("adjoint", &adjoint_));
-    }
-
-    using Matrix = typename Base::Matrix;
-    using MatrixMaps = typename Base::MatrixMaps;
-    using ConstMatrixMap = typename Base::ConstMatrixMap;
-    using ConstMatrixMaps = typename Base::ConstMatrixMaps;
-
-    void ComputeMatrix(OpKernelContext* context, const ConstMatrixMaps& inputs,
-                       MatrixMaps* outputs) final {
-      const ConstMatrixMap& input = inputs[0];
-    </pre></blockquote>
-    <blockquote><pre><code class="c++">namespace tensorflow {
-
-  template <class Scalar>
-  class MatrixInverseOp : public LinearAlgebraOp<Scalar> {
-   public:
-    typedef LinearAlgebraOp<Scalar> Base;
-
-    explicit MatrixInverseOp(OpKernelConstruction* context) : Base(context) {
-      OP_REQUIRES_OK(context, context->GetAttr("adjoint", &adjoint_));
-    }
-
-    using Matrix = typename Base::Matrix;
-    using MatrixMaps = typename Base::MatrixMaps;
-    using ConstMatrixMap = typename Base::ConstMatrixMap;
-    using ConstMatrixMaps = typename Base::ConstMatrixMaps;
-
-    void ComputeMatrix(OpKernelContext* context, const ConstMatrixMaps& inputs,
-                       MatrixMaps* outputs) final {
-      const ConstMatrixMap& input = inputs[0];
-    </code></pre></blockquote>
-
-  <h2 id="music">Music</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/foVY5kLqp6w" frameborder="0" allowfullscreen></iframe>
-  <h2 id="art">Art</h2>
-
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet semper metus, sit amet mollis elit ornare in. Nam ac quam eu nisi placerat dictum. Duis ac dolor in elit blandit eleifend vitae nec libero. Donec at luctus nisi. Suspendisse potenti. Nunc porttitor blandit lorem id ultricies. Fusce suscipit nunc sagittis odio dapibus, interdum facilisis nunc sollicitudin. Nulla ut ipsum laoreet urna commodo ornare. Phasellus scelerisque commodo pellentesque. Morbi vel tempor mauris, et facilisis neque.
+  </p>
+  <p>
+    Aenean pellentesque nisl eget felis tempus ultricies. Nam ac erat eu diam venenatis finibus a eu libero. In diam orci, congue quis fringilla a, pretium in eros. Aliquam egestas nisl sit amet ultrices condimentum. Fusce et sapien a nibh tempor lacinia. Mauris in semper metus. Sed euismod magna quis ultricies faucibus. Mauris suscipit odio vitae urna luctus, eget condimentum mi varius. Curabitur semper vel justo in finibus. Vestibulum vel nulla euismod, molestie magna eget, viverra sem. Proin fermentum felis vitae pharetra laoreet. In hac habitasse platea dictumst. Curabitur aliquet accumsan diam, ut rhoncus felis tincidunt eu. Integer pellentesque ipsum at orci volutpat egestas. Maecenas pharetra id tortor sed malesuada.
+  </p>
+  <p>
+    Nullam id dictum lacus. Aenean sit amet dui tempor felis rhoncus finibus sed ac velit. Maecenas mi risus, sagittis sit amet ultricies at, molestie sed diam. Aliquam imperdiet felis nisi. Nullam malesuada dolor ut tincidunt varius. Duis nec est sit amet nulla posuere blandit. Nullam laoreet tincidunt mauris quis suscipit. Mauris eros orci, sodales eget vehicula sit amet, consectetur nec ipsum. Donec blandit efficitur justo, ac sollicitudin arcu mattis quis. Etiam in eleifend felis. Proin id rhoncus urna, et blandit arcu. Sed et luctus urna. In lobortis ligula sed enim auctor, ac tincidunt nibh lobortis. Fusce eget ultricies erat, ut tempus neque.
+  </p>
+  <p>
+    Fusce ornare libero at neque gravida, ut sodales libero blandit. Donec et quam nec velit fermentum bibendum sit amet sed magna. Vestibulum gravida volutpat massa, id ornare velit malesuada quis. Donec mattis ligula vitae dapibus faucibus. Praesent et mattis justo. Fusce ut hendrerit nunc, nec varius purus. In posuere at sem at pretium. Donec fermentum est eu erat finibus, vel gravida tellus accumsan. Morbi et nisl in arcu egestas viverra a sed ante. Etiam facilisis ultricies fringilla. Integer luctus vel eros nec elementum. Nulla vitae elit vel est pretium lacinia nec quis nisi. Pellentesque ornare tincidunt velit, vel lacinia magna ornare et. Sed fermentum quis ipsum faucibus ullamcorper.
+  </p>
+  <p>
+    Nam ultrices nisl sed dolor aliquet ultrices. Donec convallis porttitor euismod. Pellentesque pulvinar neque pharetra est consectetur, sit amet vulputate leo ultricies. Donec tempus lectus vel gravida cursus. Morbi at erat tellus. Suspendisse tincidunt euismod quam, tempor varius dui pretium a. Morbi at massa ultrices, malesuada nibh eu, dapibus velit. Sed vitae tortor tempus, tempor odio in, tincidunt lacus. Aliquam at auctor lorem. Maecenas vitae volutpat urna.
+  </p>
 </body>
 </html>
-
-
