@@ -33,6 +33,8 @@ Runs the color to gray conversion program.
 
 Output files will be found in img/out/ (Y.pgm).
 
+
+
 ```
 ./channel
 ```
