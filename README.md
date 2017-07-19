@@ -23,7 +23,7 @@ make decolor
 
 ## Running programs
 
-**Put the source image files (*.ppm) in img/** before running the programs.
+**Put the source image files (*.ppm) in img/ before running the programs.**
 
 ```
 ./decolor
@@ -31,7 +31,7 @@ make decolor
 
 Runs the color to gray conversion program.
 
-Output files will be found in img/out/ (**Y.pgm**).
+Output files will be found in **img/out/ (Y.pgm**).
 
 ```
 ./channel
@@ -39,7 +39,7 @@ Output files will be found in img/out/ (**Y.pgm**).
 
 Runs the channel separation program.
 
-Output files will also be found in img/out/ (**R.pgm, G.pgm, B.pgm**).
+Output files will also be found in **img/out/ (R.pgm, G.pgm, B.pgm**).
 
 
 ## Clean up
@@ -48,4 +48,4 @@ Output files will also be found in img/out/ (**R.pgm, G.pgm, B.pgm**).
 make clean
 ```
 
-Deletes all object files in src/, all ppm/pgm files, and executables.
+Deletes all object files in src/, all output ppm/pgm files, and executables.
