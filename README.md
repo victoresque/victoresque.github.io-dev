@@ -13,11 +13,7 @@ Will generate two executables: channel and decolor.
 If you only want to generate one of them, use:
 ```
 make channel
-```
-
-or
-
-```
+  or
 make decolor
 ```
 
