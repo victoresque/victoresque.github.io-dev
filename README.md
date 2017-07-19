@@ -9,15 +9,26 @@ Running:
 ```
 make
 ```
-will generate two executables: channel and decolor.
-
+Will generate two executables: channel and decolor.
 If you only want to generate one of them, run:
 ```
 make channel
 ```
-
 or
-
 ```
 make decolor
 ```
+
+## Running programs
+
+
+
+## Clean up
+
+Running:
+
+```
+make clean
+```
+
+Deletes all object files in src/, all ppm/pgm files, and executables.
