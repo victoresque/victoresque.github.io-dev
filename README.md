@@ -31,6 +31,8 @@ make decolor
 
 Runs the color to gray conversion program.
 
+**No need to prefix "img/" before file names**
+
 Output files will be found in **img/out/ (Y.pgm**).
 
 ```
@@ -38,6 +40,8 @@ Output files will be found in **img/out/ (Y.pgm**).
 ```
 
 Runs the channel separation program.
+
+**No need to prefix "img/" before file names**
 
 Output files will also be found in **img/out/ (R.pgm, G.pgm, B.pgm**).
 
