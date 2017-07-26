@@ -23,27 +23,23 @@ make gau
 make med
 ```
 
-## Running programs
+## Running the programs
 
-**Put the source image files (*.ppm) in img/ before running the programs.**
-
-```
-./decolor
-```
-
-Runs the color to gray conversion program.
-
+**Put the source image files (*.pgm) in img/ before running the programs.**
 **No need to prefix "img/" before file names**
 
-Output files will be found in **img/out/ (Y.pgm**).
+### Histogram equalization
+```
+./eql filename
+```
+
+Output file is **img/out/eql.pgm**.
 
 ```
 ./channel
 ```
 
 Runs the channel separation program.
-
-**No need to prefix "img/" before file names**
 
 Output files will also be found in **img/out/ (R.pgm, G.pgm, B.pgm**).
 
