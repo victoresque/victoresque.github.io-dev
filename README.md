@@ -52,6 +52,8 @@ Output file is **img/out/gau.pgm**.
     
     radius  Filter radius.
 
+Output file is **img/out/med.pgm**.
+
 ## Clean up
 
 ```
