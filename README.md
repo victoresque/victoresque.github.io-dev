@@ -35,11 +35,13 @@ Output file is **img/out/eql.pgm**.
 ```
 ./gau [-D|-S[I]] filename sigma
 ```
-    -D    Direct 2D.          O(r²)
-    -S    Separable.          O(r)
-    -SI   Separable + IIR.    O(1)
+    -D      Direct 2D.          O(r²)
+    -S      Separable.          O(r)
+    -SI     Separable + IIR.    O(1)
+    
+    sigma   Standard deviation
 
-Output files will also be found in **img/out/ (R.pgm, G.pgm, B.pgm**).
+Output file is **img/out/gau.pgm**.
 
 
 ## Clean up
