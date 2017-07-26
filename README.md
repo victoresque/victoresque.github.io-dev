@@ -1,24 +1,26 @@
-# Practice #1
+# Practice #2
 
-* Separating color channels
-* Converting color to grey
+* Histogram equalization
+* Gaussian blur
+* Median blur
 
 ## Compiling
 
 ```
 make
 ```
-Will generate two executables: channel and decolor.
+or
+```
+make all
+```
+
+Will generate 3 executables: eql, gau and med.
 
 If you only want to generate one of them, use:
 ```
-make channel
-```
-
-or
-
-```
-make decolor
+make eql
+make gau
+make med
 ```
 
 ## Running programs
