@@ -35,11 +35,11 @@ Output file is **img/out/eql.pgm**.
 ```
 ./gau [-D|-S[I]] filename sigma
 ```
-    -D      Direct 2D.          O(r²)
-    -S      Separable.          O(r)
-    -SI     Separable + IIR.    O(1)        default
+    -D        Direct 2D.          O(r²)
+    -S        Separable.          O(r)
+    -SI       Separable + IIR.    O(1)         default
     
-    sigma   Standard deviation
+    sigma     Standard deviation
 
 Output file is **img/out/gau.pgm**.
 
@@ -47,10 +47,10 @@ Output file is **img/out/gau.pgm**.
 ```
 ./med [-D|-C] filename radius
 ```
-    -D      Direct 2D.          O(r²logr)
-    -C      Constant time.      O(1)        default
+    -D        Direct 2D.          O(r²logr)
+    -C        Constant time.      O(1)         default
     
-    radius  Filter radius.
+    radius    Filter radius.
 
 Output file is **img/out/med.pgm**.
 
