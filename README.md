@@ -39,8 +39,8 @@ Output file is **img/out/eql.pgm**.
     -S        Separable.          O(r)
     -SI       Separable + IIR.    O(1)         default
     
-    sigma     Standard deviation
-
+    sigma     Standard deviation.
+    
 Output file is **img/out/gau.pgm**.
 
 ### Median blur
