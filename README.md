@@ -22,7 +22,7 @@ make med
 
 **Put the source image files (*.pgm) in img/ before running the programs.**
 
-**No need to prefix "img/" before file names**
+**No need to prefix "img/" before the file name in program options**
 
 ### Histogram equalization
 ```
