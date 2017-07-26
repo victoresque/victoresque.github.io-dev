@@ -37,12 +37,20 @@ Output file is **img/out/eql.pgm**.
 ```
     -D      Direct 2D.          O(r²)
     -S      Separable.          O(r)
-    -SI     Separable + IIR.    O(1)
+    -SI     Separable + IIR.    O(1)        default
     
     sigma   Standard deviation
 
 Output file is **img/out/gau.pgm**.
 
+### Median blur
+```
+./med [-D|-C] filename radius
+```
+    -D      Direct 2D.          O(r²logr)
+    -C      Constant time.      O(1)        default
+    
+    radius  Filter radius.
 
 ## Clean up
 
