@@ -9,11 +9,6 @@
 ```
 make
 ```
-or
-```
-make all
-```
-
 Will generate 3 executables: eql, gau and med.
 
 If you only want to generate one of them, use:
@@ -36,11 +31,13 @@ make med
 
 Output file is **img/out/eql.pgm**.
 
+### Gaussian blur
 ```
-./channel
+./gau [-D|-S[I]] filename sigma
 ```
-
-Runs the channel separation program.
+* -D    Direct 2D.          O(r²)
+* -S    Separable.          O(r)
+* -SI   Separable + IIR.    O(1)
 
 Output files will also be found in **img/out/ (R.pgm, G.pgm, B.pgm**).
 
