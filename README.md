@@ -54,6 +54,10 @@ Output file is **img/out/gau.pgm**.
 
 Output file is **img/out/med.pgm**.
 
+## Benchmarking results
+
+See benchmark.xlsx
+
 ## Clean up
 
 ```
