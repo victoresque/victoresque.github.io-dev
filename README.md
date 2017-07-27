@@ -4,8 +4,6 @@
 * Gaussian blur
 * Median blur
 
-* Benchmark results in benchmark.xlsx
-
 ## Compiling
 
 ```
