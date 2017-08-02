@@ -1,62 +1,35 @@
-# Practice #2
+# Practice #3
 
-* Histogram equalization
-* Gaussian blur
-* Median blur
+* K-means
 
 ## Compiling
 
 ```
 make
 ```
-Will generate 3 executables: eql, gau and med.
-
-If you only want to generate one of them, use:
-```
-make eql
-make gau
-make med
-```
+Will generate 1 executable: kms.
 
 ## Running the programs
 
-**Put the source image files (*.pgm) in img/ before running the programs.**
+**Put the source image files (*.ppm) in img/ before running the programs.**
 
 **No need to prefix "img/" before the file name in program options**
 
-### Histogram equalization
+### K-means
 ```
-./eql filename
+./kms [-Ooptimize] filename k iteration
 ```
+    -O0     Color depth = 8 * 3
+    -O1     Color depth = 7 * 3
+    -O2     Color depth = 6 * 3     default
+    -O3     Color depth = 5 * 3
+    -O4     Color depth = 4 * 3
 
-Output file is **img/out/eql.pgm**.
+Output file is **img/out/kms.pgm**.
 
-### Gaussian blur
-```
-./gau [-D|-S[I]] filename sigma
-```
-    -D        Direct 2D.          O(r²)
-    -S        Separable.          O(r)
-    -SI       Separable + IIR.    O(1)         default
-    
-    sigma     Standard deviation.
-    
-Output file is **img/out/gau.pgm**.
+## Report
 
-### Median blur
-```
-./med [-D|-C] filename radius
-```
-    -D        Direct 2D.          O(r²logr)
-    -C        Constant time.      O(1)         default
-    
-    radius    Filter radius.
-
-Output file is **img/out/med.pgm**.
-
-## Benchmarking results
-
-See benchmark.xlsx
+See Report.pdf
 
 ## Clean up
 
