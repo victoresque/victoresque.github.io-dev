@@ -650,6 +650,15 @@
 /* Main */
 
 	#main {
+		ul.pager {
+			display: flex;
+			justify-content: space-between;
+			li {
+				padding: 0 1em 0;
+				list-style-type: none;
+			}
+		}
+
 		margin-left: 375px;
 		> section {
 			text-align: center;

@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem 'github-pages'
-gem 'jekyll-paginate-v2'
+gem "jekyll-paginate-v2"
 gemspec
 
 # Hello! This is where you manage which Jekyll version is used to run.
