@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    jekyll-theme-prologue (0.3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -232,9 +237,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.12)
   github-pages
   jekyll (~> 3.6.2)
   jekyll-feed (~> 0.6)
+  jekyll-theme-prologue!
   minima (~> 2.0)
   tzinfo-data
 
