@@ -1,6 +1,4 @@
 source "https://rubygems.org"
-gem 'github-pages'
-gem "jekyll-paginate-v2"
 gemspec
 
 # Hello! This is where you manage which Jekyll version is used to run.
@@ -23,6 +21,8 @@ gem "minima", "~> 2.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+  gem 'github-pages', "~> 175"
+  gem "jekyll-paginate-v2", "~> 1.9.4"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
