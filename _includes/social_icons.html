@@ -18,11 +18,17 @@
   {%- if site.pinterest_url -%}
   <li><a href="{{- site.pinterest_url -}}" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
   {%- endif -%}
+  {%- if site.deviantart_url -%}
+  <li><a href="{{- site.deviantart_url -}}" class="icon fa-deviantart"><span class="label">DeviantArt</span></a></li>
+  {%- endif -%}
   {%- if site.slack_url -%}
   <li><a href="{{- site.slack_url -}}" class="icon fa-slack"><span class="label">Slack</span></a></li>
   {%- endif -%}
   {%- if site.dribbble_url -%}
   <li><a href="{{- site.dribbble_url -}}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+  {%- endif -%}
+  {%- if site.github_url -%}
+  <li><a href="{{- site.github_url -}}" class="icon fa-github"><span class="label">Github</span></a></li>
   {%- endif -%}
   {%- if site.email -%}
   <li><a href="mailto:{{- site.email -}}" class="icon fa-envelope"><span class="label">Email</span></a></li>
