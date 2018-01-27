@@ -1,0 +1,12 @@
+---
+title: 'Pinned 1'
+layout: post
+hidedate: false
+publish: true
+permalink: /p0
+pinned: true
+---
+
+{% for post in paginator.posts %}
+  <h1>{{ post.title }}</h1>
+{% endfor %}
