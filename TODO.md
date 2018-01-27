@@ -1,3 +1,7 @@
+---
+hide: true
+---
+
 ## TODO
 
 1. Switching between English / Chinese
