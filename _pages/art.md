@@ -1,9 +1,12 @@
 ---
 title: Art
-layout: post
+layout: blog
 icon: fa-paint-brush
 permalink: /art
 order: 7
+pagination: 
+  enabled: true
+  tag: art
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
